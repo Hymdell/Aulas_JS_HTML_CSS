@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercicios - JavaScript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Exercicios - JavaScript</h1>
+
+        <script>
+            //Exercicio 1
+            function test(obj){
+               return "Nome: " + obj.nome + "\nIdade: " + obj.idade + "\nAltura: " + obj.altura + "\nSexo: " + obj.sexo + "\nÉ programador? " + obj.programador;
+            }
+            var obj = {
+                nome: "Cristopher",
+                idade: 19,
+                altura: 1.75,
+                sexo: 'M',
+                programador: true
+            };
+            console.log(test(obj));
+            //Exercicio 2
+             function impares(num1,num2){
+                var i=0,numerinhos="";
+                for(i=num1;i<num2;i++){
+                    if(i % 2 != 0){
+                        numerinhos += i + " ";
+                    }
+                }
+                return numerinhos;
+             }
+             console.log(impares(2,9));
+             //Exercicio 3
+             function ano(Anos){
+                if(Anos <= 2){
+                    return console.log("Juninho");
+                }else if(Anos >= 3 && Anos <= 5){
+                    return console.log("Pleno");
+                }else{
+                    return console.log("Senhor");
+                }
+             }
+             ano(6);
+        </script>
+    </body>
+</html>
